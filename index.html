@@ -47,5 +47,13 @@
   2. clamp()函数如何使用？
   clamp(最小值，最大值，当前值)
   3. 要考虑到accessibility的情况， 所以在input上使用focus,并使用outline来让input的轮廓显示。
-  
+  4. console.dir()可以查看一个元素的所有属性
+  5. addEventListener()的第三个参数可以设置为true，这样就可以在捕获阶段触发事件
+  addEventListener('click', function() {}, true)
+  addEventListener有三个参数，第一个是事件类型，第二个是事件处理函数，第三个是是否在捕获阶段触发事件
+  addEventListener是callback函数，所以可以使用匿名函数
+  6. event.preventDefault()可以阻止默认事件
+  7. truthy和falsy: 
+  truthy: 1, '1', true, 'true', 'hello', {}, [], function() {}
+  falsy: 0, '', false, null, undefined, NaN
 -->

@@ -9,3 +9,17 @@ const BMIData = [
 
 // IMC = poids en kg / taille² en m
 const form = document.querySelector("form");
+const inputs = document.querySelectorAll("input"); // 选择两个inputs是为了在下面获得用户输入的值
+form.addEventListener("submit", handleForm);
+
+function handleForm(e) {
+  e.preventDefault();
+  calculateBMI();
+}
+
+function calculateBMI() {
+  const weight = inputs[0].value;
+  const height = inputs[1].value;
+  console.log(weight, height);
+}
+
