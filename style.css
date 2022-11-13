@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Work Sans", sans-serif;
+  background: linear-gradient(to right, #47bec7, #486dbe);
+  padding: clamp(20px, 5vw, 50px) 10px 10px;
+}
+
+.container {
+  max-width: 850px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  border: 1px solid #36363692;
+  padding: 25px;
+  margin: 0 auto;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #486dbe;
+}
+
+h1 span {
+  font-weight: 400;
+  color: #47bec7;
+}
+
+.inputs-container {
+  display: flex;
+  justify-content: center;
+}
+
+.inputs-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.inputs-container input {
+  min-width: 350px;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #36363692;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+.inputs-container input:focus {
+  outline: 1px solid #36363692;
+}
+
+.input-group:nth-child(2) {
+  margin-left: 20px;
+}
+
+form button {
+  display: block;
+  margin: 40px auto;
+  padding: 10px 30px;
+  min-width: 200px;
+  border: none;
+  border-radius: 8px;
+  background-color: #47bec7;
+  font-weight: 500;
+  font-size: 18px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #486dbe;
+  color: #f1f1f1;
+}
+
+.info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bmi-value {
+  font-size: 50px;
+  font-weight: 600;
+  color: #47bec7;
+}
+
+.result {
+  font-size: 20px;
+  font-weight: 500;
+  color: #486dbe;
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 600px;    
+  }
+  .inputs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-group:nth-child(2) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .input-group {
+    width: 100%;
+  }
+  .input-group input {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 280px) {
+  form button {
+    padding: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    min-width: 150px;
+  }
+  h1 {
+  font-weight: 400;
+  font-size: 20px;
+}
+}
