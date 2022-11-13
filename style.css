@@ -90,18 +90,16 @@ form button:hover {
 .bmi-value {
   font-size: 50px;
   font-weight: 600;
-  color: #47bec7;
 }
 
 .result {
   font-size: 20px;
   font-weight: 500;
-  color: #486dbe;
 }
 
 @media (max-width: 800px) {
   .container {
-    max-width: 600px;    
+    max-width: 600px;
   }
   .inputs-container {
     flex-direction: column;
@@ -128,7 +126,7 @@ form button:hover {
     min-width: 150px;
   }
   h1 {
-  font-weight: 400;
-  font-size: 20px;
-}
+    font-weight: 400;
+    font-size: 20px;
+  }
 }
